@@ -7,7 +7,7 @@ defmodule SmartChain.Mixfile do
      elixir: "~> 1.4",
      package: package(),
      description: description(),
-     name: "SmartChain",
+     name: "smart_chain",
      source_url: "https://github.com/esprezzo/elixir-smart-chain",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -42,7 +42,7 @@ defmodule SmartChain.Mixfile do
 
   defp deps do
     [
-      {:tesla, "~> 1.3.0"},
+      {:tesla, "~> 1.4.0"},
       # optional, but recommended adapter
       {:hackney, "~> 1.16.0"},
       # {:ex_abi, "git: https://github.com/alanwilhelm/ex_abi.git"},

@@ -208,7 +208,7 @@ defmodule SmartChain.ABI do
       hex_hash = Hexate.encode(hash)
       input_sig = String.slice(hex_hash, 0,8)
       k = "0x#{input_sig}"
-      Logger.warn ">>-----> TRUNCATED HEX HASH Method name: #{input_signature} // #{k}"
+      # Logger.warn ">>-----> TRUNCATED HEX HASH Method name: #{input_signature} // #{k}"
       Map.put(acc, k, input_signature)
     end)
   end

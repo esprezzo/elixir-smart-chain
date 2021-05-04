@@ -450,7 +450,6 @@ defmodule SmartChain.ContractMulti do
       
       {:ok, logs} = SmartChain.get_filter_logs(filter_id)
       
-      Logger.warn "handle_call({:get_filter_logs})"
    
       formatted_logs =
         if logs && logs != [] do

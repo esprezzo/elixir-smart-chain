@@ -29,7 +29,7 @@ defmodule SmartChain.Transport do
 
     smart_chain_port = case System.get_env("SMART_CHAIN_PORT") do
       nil ->
-        Logger.error "SMART_CHAIN_PORT ENVIRONMENT VARIABLE NOT SET. Using 8545"
+        # Logger.error "SMART_CHAIN_PORT ENVIRONMENT VARIABLE NOT SET. Using 8545"
         8545
       port ->
         # Logger.info "SMART_CHAIN_PORT ENVIRONMENT VARIABLE SET. Using #{port}"
